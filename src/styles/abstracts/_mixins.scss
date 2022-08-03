@@ -1,0 +1,9 @@
+@mixin round {
+    border-radius: $radius;
+}
+@mixin fade {
+    transition: $ts;
+}
+@mixin shadow($color) {
+    box-shadow: 0 0 $shadow 0 $color;
+}

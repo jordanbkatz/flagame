@@ -1,0 +1,10 @@
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > header {
+        padding: 35px 0;
+    }
+    
+}
