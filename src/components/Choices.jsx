@@ -11,9 +11,9 @@ const Choices = () => {
                 choices.map((choice, i) => (
                     <button 
                         key={i} 
-                        className={`btn ${choice.guessed && 'guessed'}`}
+                        className={`btn ${(choice && choice.guessed) && 'guessed'}`}
                         onClick={() => dispatch(chooseCountry(i))}
-                    ><p>{choice && choice.name.common}</p></button>
+                    >{choice && choice.name.common}</button>
                 ))
             }
         </section>

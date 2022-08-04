@@ -6,11 +6,11 @@ const Stats = () => {
     return (
         <section className="stats">
             <div>
-                <p>streak</p>
+                <p>Streak</p>
                 <h2>{streak}</h2>
             </div>
             <div>
-                <p>highest</p>
+                <p>Highest</p>
                 <h2>{highest}</h2>
             </div>
         </section>

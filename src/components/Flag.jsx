@@ -5,7 +5,7 @@ const Flag = () => {
     const { answer } = useSelector((state) => state.game);
     return (
         <img 
-            src={answer.flags.png}
+            src={(answer) ? answer.flags.png : ''}
             alt="flag failed to load"
             className="flag"
         />

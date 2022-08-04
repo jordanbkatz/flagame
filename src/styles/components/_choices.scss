@@ -13,9 +13,9 @@
         width: calc(50% - 17.5px);
         height: 125px;
         background-color: $primary;
-        @include shadow($secondary);
         @include round;
         @include fade;
+        @include shadow($secondary);
         @include desktop {
             &:hover {
                 background-color: $secondary;
