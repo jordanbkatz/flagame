@@ -1,11 +1,13 @@
 $font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $primary: white;
 $secondary: lightgrey;
-$tertiary: #101010;
 $accent: crimson;
-$ts: all 250ms linear;
-$shadow: 5px;
+$shadow: 0 0 5px 0;
 $radius: 10px;
-$desktop: 1000px;
-$tablet: 750px;
-$mobile: 500px;
+$breakpoints: (
+    xs: 250px,
+    sm: 500px,
+    md: 750px,
+    lg: 1000px,
+    xl: 1250px
+);

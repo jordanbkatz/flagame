@@ -1,16 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
 import './styles/main.scss';
 
 const App = () => {
     return (
-        <BrowserRouter>
+        <Router>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Navigate replace to="/home" />} />
+                <Route path="/home" element={<Home />} />
             </Routes>
-        </BrowserRouter>
+        </Router>
     );
-};
+}
 
 export default App;
