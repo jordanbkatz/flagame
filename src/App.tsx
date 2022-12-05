@@ -1,19 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './components/Layout';
 import Home from './pages/Home';
-import Play from './pages/Play';
 
-function App() {
+const App: React.FC = () => {
     return (
-        <div className="app">
-            <Router>
-                <div className="content">
-                    <Routes>
-                        <Route path="/" element={<Home />} />
-                        <Route path="/play" element={<Play />} />
-                    </Routes>
-                </div>
-            </Router>
-        </div>
+        <Router>
+            <Layout>
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+            </Layout>
+        </Router>
     );
 };
 

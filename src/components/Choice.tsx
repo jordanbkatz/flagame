@@ -1,14 +1,11 @@
-import { useContext } from 'react';
-import GameContext from '../contexts/GameContext';
-
 interface IChoiceProps {
     i: number;
     name: string;
     guessed: boolean;
+    guessCountry: (guess: number) => void;
 }
 
-function Choice({ i, name, guessed }: IChoiceProps) {
-    const { guessCountry } = useContext(GameContext);
+const Choice: React.FC<IChoiceProps> = ({ i, guessed, name, guessCountry }) => {
     const handleChoose = () => {
         guessCountry(i);
     };

@@ -1,0 +1,24 @@
+.choice {
+    margin-top: 35px;
+    padding: 25px;
+    width: 100%;
+    height: 140px;
+    color: black;
+    background-color: $accent;
+    color: $primary;
+    border-radius: 7px;
+    @include desktop {
+        width: calc((100% - 35px) / 2);
+        &:hover {
+            opacity: .7;
+        }
+    }
+    &.guessed {
+        background-color: $primary;
+        color: $accent;
+        border: 1px solid $accent;
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}

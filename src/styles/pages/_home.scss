@@ -1,3 +1,62 @@
 .home {
     width: 100%;
+    max-width: 500px;
+    .header {
+        margin-bottom: 35px;
+        padding: 35px;
+        width: 100%;
+        background-color: $accent;
+        color: $primary;
+        font-size: 35px;
+        text-align: center;
+        border-radius: 7px;
+    }
+    .stats {
+        margin-bottom: 35px;
+        padding: 35px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 7px;
+        border: 1px solid $secondary;
+        .leave {
+            padding: 17.5px;
+            background-color: $accent;
+            color: $primary;
+            border-radius: 7px;
+            &:hover {
+                opacity: .7;
+            }
+        }
+        .stat {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            .name {
+                font-size: 17.5px;
+                margin-bottom: 17.5px;
+            }
+            .amount {
+                font-size: 35px;
+                color: $accent;
+            }
+        }
+    }
+    .flag {
+        width: 100%;
+        height: calc(0.7 * (100vw - 70px));
+        max-height: calc(0.7 * 500px);
+        border-radius: 7px;
+        border: 1px solid $secondary;
+    }
+    .choices {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
